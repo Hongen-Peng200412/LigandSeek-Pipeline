@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ligandseek-prepare"
+version = "1.0.0"
+description = "Prepare a cryo-EM map, receptor and candidate identities for LigandSeek"
+requires-python = ">=3.10"
+dependencies = ["ligandseek==1.0.0"]
+readme = "README.md"
+
+[tool.setuptools.packages.find]
+include = ["ligandseek_prepare*"]
+
+[tool.setuptools.data-files]
+"share/doc/ligandseek-prepare" = ["README.md", "INPUTS.md"]

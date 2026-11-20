@@ -1,0 +1,5 @@
+*.sh text eol=lf
+*.sbatch text eol=lf
+# 公开包的 Python 源码在 Windows 同步、Linux 安装和 Git 标签之间按原字节核对。
+Infer/**/*.py text eol=lf
+Prepare/**/*.py text eol=lf

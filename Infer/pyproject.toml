@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ligandseek"
+version = "1.0.0"
+description = "Find, Match and Build for ligand interpretation in cryo-EM maps"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.scripts]
+ligandseek = "ligandseek.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["ligandseek*"]
+
+[tool.setuptools.data-files]
+"share/doc/ligandseek" = ["README.md", "MODELS.md", "SELECTION.md"]
+"share/doc/ligandseek/ligandseek/find" = ["ligandseek/find/README.md"]
+"share/doc/ligandseek/ligandseek/match" = ["ligandseek/match/README.md"]
+"share/doc/ligandseek/ligandseek/build" = ["ligandseek/build/README.md"]
